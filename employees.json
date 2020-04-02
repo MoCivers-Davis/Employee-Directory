@@ -1,27 +1,94 @@
-[
+const employees = [
+
     {
-      "id": 1,
-      "name": "Andrew smith",
-      "image":
-        "https://vignette.wikia.nocookie.net/spongebobgalaxy/images/0/07/SpongeBob_SquarePants.png/revision/latest?cb=20171228024014",
-      "phone": "Fry Cook",
-      "email": "A Pineapple Under the Sea",
-      "dob": 11-19-1985
-    },
-    {
-      "id": 2,
-      "name": "Mr. Krabs",
-      "image":
-        "https://vignette3.wikia.nocookie.net/vsbattles/images/8/80/Mr._Krabs.png/revision/latest?cb=20150919162131",
-      "occupation": "Restaurant Owner",
-      "location": "A Giant Anchor"
-    },
-    {
-      "id": 3,
-      "name": "Squidward",
-      "image":
-        "https://vignette2.wikia.nocookie.net/fictionalcharacters/images/a/ac/Squidward.png/revision/latest?cb=20131121012626",
-      "occupation": "Cashier",
-      "location": "An Easter Island Head"
-    }
-  ]
+        "id": 1,
+        "name": "Andrew smith",
+        "image":
+          "http://www.gravatar.com/avatar/?d=mm",
+        "phone": "215-219-1477",
+        "email": "mocivers@comcast.net",
+        "dob": "11/09/1985"
+      },
+      {
+        "id": 45,
+        "name": "Adam David",
+        "image":
+          "http://www.gravatar.com/avatar/?d=mm",
+        "phone": "610-764-0391",
+        "email": "mania@gmail.com",
+        "dob": "08/17/1973"
+      },
+      {
+        "id": 3,
+        "name": "Ken Edwardds",
+        "image":
+          "http://www.gravatar.com/avatar/?d=mm",
+        "phone": "706-884-7539",
+        "email": "niceguy@gmail.com",
+        "dob": "02/08/1945"
+      },
+      {
+        "id": 4,
+        "name": "Sarah Jacobs",
+        "image":
+          "http://www.gravatar.com/avatar/?d=mm",
+        "phone": "706-882-8851",
+        "email": "niceguy@gmail.com",
+        "dob": "02/08/1945"
+      },
+      {
+        "id": 5,
+        "name": "Pam Spring",
+        "image":
+          "http://www.gravatar.com/avatar/?d=mm",
+        "phone": "706-821-8549",
+        "email": "niceguy@gmail.com",
+        "dob": "02/08/1945"
+      },
+      {
+        "id": 6,
+        "name": "Jack Jennings",
+        "image":
+          "http://www.gravatar.com/avatar/?d=mm",
+        "phone": "706-884-7539",
+        "email": "niceguy@gmail.com",
+        "dob": "02/08/1945"
+      },
+      {
+        "id": 7,
+        "name": "Kelly Roma",
+        "image":
+          "http://www.gravatar.com/avatar/?d=mm",
+        "phone": "706-884-7539",
+        "email": "niceguy@gmail.com",
+        "dob": "02/08/1945"
+      },
+      {
+        "id": 8,
+        "name": "Yolanda Tanner",
+        "image":
+          "http://www.gravatar.com/avatar/?d=mm",
+        "phone": "706-884-7539",
+        "email": "niceguy@gmail.com",
+        "dob": "02/08/1945"
+      },
+      {
+        "id": 9,
+        "name": "Tiger Johns",
+        "image":
+          "http://www.gravatar.com/avatar/?d=mm",
+        "phone": "706-884-7539",
+        "email": "niceguy@gmail.com",
+        "dob": "02/08/1945"
+      },
+      {
+        "id": 10,
+        "name": "Tim Dallas",
+        "image":
+          "http://www.gravatar.com/avatar/?d=mm",
+        "phone": "706-884-7539",
+        "email": "niceguy@gmail.com",
+        "dob": "02/08/1945"
+      }
+
+];
