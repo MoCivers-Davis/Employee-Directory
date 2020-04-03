@@ -36,8 +36,8 @@ const employees = [
         "image":
             "http://www.gravatar.com/avatar/?d=mm",
         "phone": "706-882-8851",
-        "email": "niceguy@gmail.com",
-        "dob": "02/08/1945"
+        "email": "allgood@comcast.net",
+        "dob": "07/14/1985"
     },
     {
         "id": 5,
@@ -45,8 +45,8 @@ const employees = [
         "image":
             "http://www.gravatar.com/avatar/?d=mm",
         "phone": "706-821-8549",
-        "email": "niceguy@gmail.com",
-        "dob": "02/08/1945"
+        "email": "springpam@comcast.net",
+        "dob": "11/21/1978"
     },
     {
         "id": 6,
@@ -54,44 +54,44 @@ const employees = [
         "image":
             "http://www.gravatar.com/avatar/?d=mm",
         "phone": "706-884-7539",
-        "email": "niceguy@gmail.com",
-        "dob": "02/08/1945"
+        "email": "jennings.jack@gmail.com",
+        "dob": "09/28/1979"
     },
     {
         "id": 7,
         "name": "Kelly Roma",
         "image":
             "http://www.gravatar.com/avatar/?d=mm",
-        "phone": "706-884-7539",
-        "email": "niceguy@gmail.com",
-        "dob": "02/08/1945"
+        "phone": "215-214-8056",
+        "email": "kellyroma@gmail.com",
+        "dob": "03/26/1978"
     },
     {
         "id": 8,
         "name": "Yolanda Tanner",
         "image":
             "http://www.gravatar.com/avatar/?d=mm",
-        "phone": "706-884-7539",
-        "email": "niceguy@gmail.com",
-        "dob": "02/08/1945"
+        "phone": "215-221-8940",
+        "email": "tanneryo@gmail.com",
+        "dob": "07/04/1985"
     },
     {
         "id": 9,
         "name": "Tiger Johns",
         "image":
             "http://www.gravatar.com/avatar/?d=mm",
-        "phone": "706-884-7539",
-        "email": "niceguy@gmail.com",
-        "dob": "02/08/1945"
+        "phone": "702-619-9904",
+        "email": "tigerjones@gmail.com",
+        "dob": "06/16/1987"
     },
     {
         "id": 10,
         "name": "Tim Dallas",
         "image":
             "http://www.gravatar.com/avatar/?d=mm",
-        "phone": "706-884-7539",
-        "email": "niceguy@gmail.com",
-        "dob": "02/08/1945"
+        "phone": "619-987-8152",
+        "email": "hugecat@gmail.com",
+        "dob": "12/08/1974"
     }
 
 ];
