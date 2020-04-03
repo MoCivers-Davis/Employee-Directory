@@ -100,47 +100,60 @@ class table extends React.Component {
         employees: employees
     }
     sortByName = () => {
+        let sortedEmployees = this.state.employees.sort((a, b) => {
+            if (b.name > a.name) {
+                return -1;
+            }
 
+            if (a.name > b.name) {
+                return 1;
+            }
+
+            return 0;
+        });
+        console.log(sortedEmployees);
+        this.setState({ employees: sortedEmployees });
     }
     search = () => { //Filtering the Employees Array
-console.log(this.state.employees)
-const employeeArray = this.state.employees
-const result = employeeArray.filter(employee =>{
-    let employeeName = employee.name
-console.log(employeeName)} );
-console.log(result)
+        console.log(this.state.employees)
+        const employeeArray = this.state.employees
+        const result = employeeArray.filter(employee => {
+            let employeeName = employee.name
+            console.log(employeeName)
+        });
+        console.log(result)
     }
 
-render() {
-    return (
-        
-        <div className="card mt-4"> 
-            {this.search()}
-            <table>
-                <thead>
-                    <tr>
-                        <th>Image</th>
-                        <th>Name <button onClick={this.sortByName}>Sort</button></th>
-                        <th>Phone</th>
-                        <th>Email</th>
-                        <th>DOB</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {this.state.employees.map(props => (
-                        <tr key={props.id}>
-                            <td className="image"><img alt={props.name} src={props.image} /></td>
-                            <td>{props.name}</td>
-                            <td>{props.phone}</td>
-                            <td>{props.email}</td>
-                            <td>{props.dob}</td>
+    render() {
+        return (
+
+            <div className="card mt-4">
+                {this.search()}
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Image</th>
+                            <th>Name <button onClick={this.sortByName}>Sort</button></th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>DOB</th>
                         </tr>
-                    ))}
-                </tbody>
-            </table>
-        </div>
-    );
-}
+                    </thead>
+                    <tbody>
+                        {this.state.employees.map(person => (
+                            <tr key={person.id}>
+                                <td className="image"><img alt={person.name} src={person.image} /></td>
+                                <td>{person.name}</td>
+                                <td>{person.phone}</td>
+                                <td>{person.email}</td>
+                                <td>{person.dob}</td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
+        );
+    }
 }
 
 export default table;

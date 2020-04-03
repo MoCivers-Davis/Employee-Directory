@@ -1,6 +1,9 @@
 .header {
-    background: #b71775;
+    background: green;
     height: 200px;
+    text-align: center;
+    color: white;
+    
   }
   
   .header h1{
