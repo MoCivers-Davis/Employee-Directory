@@ -1,5 +1,6 @@
 import React from "react";
 import "../table/table.css";
+import Search from "../search/search";
 
 const employees = [
 
@@ -97,9 +98,12 @@ const employees = [
 ];
 class table extends React.Component {
     state = {
-        employees: employees
+        employees: employees,
+        filterEmployee: employees,
+        sortOrder: ""
     }
     sortByName = () => {
+        /* Sort by ASC */
         let sortedEmployees = this.state.employees.sort((a, b) => {
             if (b.name > a.name) {
                 return -1;
@@ -111,24 +115,39 @@ class table extends React.Component {
 
             return 0;
         });
+
+if(this.state.sortOrder === "DESC") {
+    sortedEmployees.reverse();
+    this.setState({ sortOrder: "ASC" });
+ } else {
+     this.setState({ sortOrder: "DESC" });
+ }
+
         console.log(sortedEmployees);
         this.setState({ employees: sortedEmployees });
     }
-    search = () => { //Filtering the Employees Array
+    startSearch = e => { //Filtering the Employees Array
+        console.log(e.target.value)
+
+const searchValue = e.target.value
+
         console.log(this.state.employees)
         const employeeArray = this.state.employees
         const result = employeeArray.filter(employee => {
-            let employeeName = employee.name
+            let employeeName = Object.values(employee.name).join("").toLowerCase()
             console.log(employeeName)
+            return employeeName.indexOf(searchValue.toLowerCase()) !== -1
         });
         console.log(result)
+        this.setState({filterEmployee:result})
     }
 
     render() {
         return (
-
+<>
+<Search startSearch={this.startSearch}/>
             <div className="card mt-4">
-                {this.search()}
+                {/* {this.search()} */}
                 <table>
                     <thead>
                         <tr>
@@ -140,7 +159,7 @@ class table extends React.Component {
                         </tr>
                     </thead>
                     <tbody>
-                        {this.state.employees.map(person => (
+                        {this.state.filterEmployee.map(person => (
                             <tr key={person.id}>
                                 <td className="image"><img alt={person.name} src={person.image} /></td>
                                 <td>{person.name}</td>
@@ -152,6 +171,7 @@ class table extends React.Component {
                     </tbody>
                 </table>
             </div>
+            </>
         );
     }
 }
