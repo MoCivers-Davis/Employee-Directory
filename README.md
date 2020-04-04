@@ -1,14 +1,34 @@
-![screenshot of Portfolio](img/Fitness-Tracker-app.png)
+
 
 # Employee-Directory-App
-## Description
-* This app is a workout app that allows the user to create and track thier dialy workouts.  When the user visits the main page they will be given an an option to create a new workout or continue with thier last workout.  The user will ultimately be able to add exercises to past workouts and/or add new exercises.
+
+## Overview
+
+For this assignment, I created an employee directory with React. This assignment required me to break up my application's UI into components, manage component state, and respond to user events.
+
+## User Story
+
+* As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+
+## Business Context
+
+An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
+
+## Acceptance Criteria
+
+Given a table of random users, when the user loads the page, a table of employees should render. 
+
+The user should be able to:
+
+  * Sort the table by at least one category
+
+  * Filter the users by at least one property.
 
 ## Technology
-* This app used React.js, Robo3T, JavaScript, Heroku for deployment as well as GitHub. 
-* As a developer I had the opportunity to use HTTP routes such as GET, POST, and Put while pushig data.
+* This app used React.js, JSON, GitHub Pages, GitHub, and CSS
+* As a developer I had the opportunity to use React components, props, and states to pass information and to set values
 
 ## Deployment 
 * https://github.com/MoCivers-Davis/Employee-Directory - GitHub Repo
-* https://mocivers-davis.github.io/Employee-Directory/ - UI Deployed
+* https://mocivers-davis.github.io/Employee-Directory/- UI Deployed
 
